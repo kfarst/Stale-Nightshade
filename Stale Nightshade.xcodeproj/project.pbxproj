@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251AA0B619402B730034E20C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251AA0B519402B730034E20C /* Foundation.framework */; };
+		251AA0B819402B730034E20C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251AA0B719402B730034E20C /* CoreGraphics.framework */; };
+		251AA0BA19402B730034E20C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251AA0B919402B730034E20C /* UIKit.framework */; };
+		251AA0C019402B730034E20C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 251AA0BE19402B730034E20C /* InfoPlist.strings */; };
+		251AA0C219402B730034E20C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0C119402B730034E20C /* main.m */; };
+		251AA0C619402B730034E20C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0C519402B730034E20C /* AppDelegate.m */; };
+		251AA0C819402B730034E20C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251AA0C719402B730034E20C /* Images.xcassets */; };
+		251AA0CF19402B730034E20C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251AA0CE19402B730034E20C /* XCTest.framework */; };
+		251AA0D019402B730034E20C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251AA0B519402B730034E20C /* Foundation.framework */; };
+		251AA0D119402B730034E20C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251AA0B919402B730034E20C /* UIKit.framework */; };
+		251AA0D919402B730034E20C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 251AA0D719402B730034E20C /* InfoPlist.strings */; };
+		251AA0DB19402B730034E20C /* Stale_NightshadeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0DA19402B730034E20C /* Stale_NightshadeTests.m */; };
+		251AA0E719402BC60034E20C /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0E519402BC60034E20C /* MoviesViewController.m */; };
+		251AA0E819402BC60034E20C /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0E519402BC60034E20C /* MoviesViewController.m */; };
+		251AA0E919402BC60034E20C /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251AA0E619402BC60034E20C /* MoviesViewController.xib */; };
+		251AA0EA19402BC60034E20C /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251AA0E619402BC60034E20C /* MoviesViewController.xib */; };
+		251AA0F01940CCDC0034E20C /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0EE1940CCDC0034E20C /* MovieCell.m */; };
+		251AA0F11940CCDC0034E20C /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0EE1940CCDC0034E20C /* MovieCell.m */; };
+		251AA0F21940CCDC0034E20C /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251AA0EF1940CCDC0034E20C /* MovieCell.xib */; };
+		251AA0F31940CCDC0034E20C /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251AA0EF1940CCDC0034E20C /* MovieCell.xib */; };
+		251AA0F719410A550034E20C /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0F619410A550034E20C /* Movie.m */; };
+		251AA0F819410A550034E20C /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AA0F619410A550034E20C /* Movie.m */; };
+		25D1ABB4195BAA5900C19BC2 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D1ABB2195BAA5900C19BC2 /* MovieDetailViewController.m */; };
+		25D1ABB5195BAA5900C19BC2 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D1ABB3195BAA5900C19BC2 /* MovieDetailViewController.xib */; };
+		97DFD6FCC46A46E49A3FF381 /* libPods-Stale Nightshade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFAB3DE08EB46529651DC5D /* libPods-Stale Nightshade.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		251AA0D219402B730034E20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 251AA0AA19402B730034E20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251AA0B119402B730034E20C;
+			remoteInfo = "Stale Nightshade";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		196ADFBF71774FF982D94DE3 /* Pods-Stale Nightshade.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stale Nightshade.xcconfig"; path = "Pods/Pods-Stale Nightshade.xcconfig"; sourceTree = "<group>"; };
+		251AA0B219402B730034E20C /* Stale Nightshade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stale Nightshade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251AA0B519402B730034E20C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		251AA0B719402B730034E20C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		251AA0B919402B730034E20C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		251AA0BD19402B730034E20C /* Stale Nightshade-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stale Nightshade-Info.plist"; sourceTree = "<group>"; };
+		251AA0BF19402B730034E20C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		251AA0C119402B730034E20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		251AA0C319402B730034E20C /* Stale Nightshade-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stale Nightshade-Prefix.pch"; sourceTree = "<group>"; };
+		251AA0C419402B730034E20C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		251AA0C519402B730034E20C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		251AA0C719402B730034E20C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		251AA0CD19402B730034E20C /* Stale NightshadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stale NightshadeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251AA0CE19402B730034E20C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		251AA0D619402B730034E20C /* Stale NightshadeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stale NightshadeTests-Info.plist"; sourceTree = "<group>"; };
+		251AA0D819402B730034E20C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		251AA0DA19402B730034E20C /* Stale_NightshadeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stale_NightshadeTests.m; sourceTree = "<group>"; };
+		251AA0E419402BC60034E20C /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoviesViewController.h; path = ../MoviesViewController.h; sourceTree = "<group>"; };
+		251AA0E519402BC60034E20C /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoviesViewController.m; path = ../MoviesViewController.m; sourceTree = "<group>"; };
+		251AA0E619402BC60034E20C /* MoviesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoviesViewController.xib; path = ../MoviesViewController.xib; sourceTree = "<group>"; };
+		251AA0ED1940CCDC0034E20C /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		251AA0EE1940CCDC0034E20C /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		251AA0EF1940CCDC0034E20C /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		251AA0F519410A550034E20C /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		251AA0F619410A550034E20C /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		25D1ABB1195BAA5900C19BC2 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		25D1ABB2195BAA5900C19BC2 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		25D1ABB3195BAA5900C19BC2 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
+		6AFAB3DE08EB46529651DC5D /* libPods-Stale Nightshade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stale Nightshade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		251AA0AF19402B730034E20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251AA0B819402B730034E20C /* CoreGraphics.framework in Frameworks */,
+				251AA0BA19402B730034E20C /* UIKit.framework in Frameworks */,
+				251AA0B619402B730034E20C /* Foundation.framework in Frameworks */,
+				97DFD6FCC46A46E49A3FF381 /* libPods-Stale Nightshade.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251AA0CA19402B730034E20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251AA0CF19402B730034E20C /* XCTest.framework in Frameworks */,
+				251AA0D119402B730034E20C /* UIKit.framework in Frameworks */,
+				251AA0D019402B730034E20C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251AA0A919402B730034E20C = {
+			isa = PBXGroup;
+			children = (
+				251AA0BB19402B730034E20C /* Stale Nightshade */,
+				251AA0D419402B730034E20C /* Stale NightshadeTests */,
+				251AA0B419402B730034E20C /* Frameworks */,
+				251AA0B319402B730034E20C /* Products */,
+				196ADFBF71774FF982D94DE3 /* Pods-Stale Nightshade.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		251AA0B319402B730034E20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0B219402B730034E20C /* Stale Nightshade.app */,
+				251AA0CD19402B730034E20C /* Stale NightshadeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		251AA0B419402B730034E20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0B519402B730034E20C /* Foundation.framework */,
+				251AA0B719402B730034E20C /* CoreGraphics.framework */,
+				251AA0B919402B730034E20C /* UIKit.framework */,
+				251AA0CE19402B730034E20C /* XCTest.framework */,
+				6AFAB3DE08EB46529651DC5D /* libPods-Stale Nightshade.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		251AA0BB19402B730034E20C /* Stale Nightshade */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0F41941092A0034E20C /* Models */,
+				251AA0EC19402BF90034E20C /* Views */,
+				251AA0EB19402BEB0034E20C /* Controllers */,
+				251AA0C419402B730034E20C /* AppDelegate.h */,
+				251AA0C519402B730034E20C /* AppDelegate.m */,
+				251AA0C719402B730034E20C /* Images.xcassets */,
+				251AA0BC19402B730034E20C /* Supporting Files */,
+			);
+			path = "Stale Nightshade";
+			sourceTree = "<group>";
+		};
+		251AA0BC19402B730034E20C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0BD19402B730034E20C /* Stale Nightshade-Info.plist */,
+				251AA0BE19402B730034E20C /* InfoPlist.strings */,
+				251AA0C119402B730034E20C /* main.m */,
+				251AA0C319402B730034E20C /* Stale Nightshade-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		251AA0D419402B730034E20C /* Stale NightshadeTests */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0DA19402B730034E20C /* Stale_NightshadeTests.m */,
+				251AA0D519402B730034E20C /* Supporting Files */,
+			);
+			path = "Stale NightshadeTests";
+			sourceTree = "<group>";
+		};
+		251AA0D519402B730034E20C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0D619402B730034E20C /* Stale NightshadeTests-Info.plist */,
+				251AA0D719402B730034E20C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		251AA0EB19402BEB0034E20C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0E419402BC60034E20C /* MoviesViewController.h */,
+				25D1ABB1195BAA5900C19BC2 /* MovieDetailViewController.h */,
+				25D1ABB2195BAA5900C19BC2 /* MovieDetailViewController.m */,
+				251AA0E519402BC60034E20C /* MoviesViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		251AA0EC19402BF90034E20C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0ED1940CCDC0034E20C /* MovieCell.h */,
+				251AA0EE1940CCDC0034E20C /* MovieCell.m */,
+				251AA0EF1940CCDC0034E20C /* MovieCell.xib */,
+				25D1ABB3195BAA5900C19BC2 /* MovieDetailViewController.xib */,
+				251AA0E619402BC60034E20C /* MoviesViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		251AA0F41941092A0034E20C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				251AA0F519410A550034E20C /* Movie.h */,
+				251AA0F619410A550034E20C /* Movie.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		251AA0B119402B730034E20C /* Stale Nightshade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251AA0DE19402B730034E20C /* Build configuration list for PBXNativeTarget "Stale Nightshade" */;
+			buildPhases = (
+				42E39DB8C8754A73A47FEC2C /* Check Pods Manifest.lock */,
+				251AA0AE19402B730034E20C /* Sources */,
+				251AA0AF19402B730034E20C /* Frameworks */,
+				251AA0B019402B730034E20C /* Resources */,
+				6CD83532676945B493C536AD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stale Nightshade";
+			productName = "Stale Nightshade";
+			productReference = 251AA0B219402B730034E20C /* Stale Nightshade.app */;
+			productType = "com.apple.product-type.application";
+		};
+		251AA0CC19402B730034E20C /* Stale NightshadeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251AA0E119402B730034E20C /* Build configuration list for PBXNativeTarget "Stale NightshadeTests" */;
+			buildPhases = (
+				251AA0C919402B730034E20C /* Sources */,
+				251AA0CA19402B730034E20C /* Frameworks */,
+				251AA0CB19402B730034E20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				251AA0D319402B730034E20C /* PBXTargetDependency */,
+			);
+			name = "Stale NightshadeTests";
+			productName = "Stale NightshadeTests";
+			productReference = 251AA0CD19402B730034E20C /* Stale NightshadeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		251AA0AA19402B730034E20C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Kevin Farst";
+				TargetAttributes = {
+					251AA0CC19402B730034E20C = {
+						TestTargetID = 251AA0B119402B730034E20C;
+					};
+				};
+			};
+			buildConfigurationList = 251AA0AD19402B730034E20C /* Build configuration list for PBXProject "Stale Nightshade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 251AA0A919402B730034E20C;
+			productRefGroup = 251AA0B319402B730034E20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				251AA0B119402B730034E20C /* Stale Nightshade */,
+				251AA0CC19402B730034E20C /* Stale NightshadeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		251AA0B019402B730034E20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D1ABB5195BAA5900C19BC2 /* MovieDetailViewController.xib in Resources */,
+				251AA0C019402B730034E20C /* InfoPlist.strings in Resources */,
+				251AA0E919402BC60034E20C /* MoviesViewController.xib in Resources */,
+				251AA0F21940CCDC0034E20C /* MovieCell.xib in Resources */,
+				251AA0C819402B730034E20C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251AA0CB19402B730034E20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251AA0F31940CCDC0034E20C /* MovieCell.xib in Resources */,
+				251AA0D919402B730034E20C /* InfoPlist.strings in Resources */,
+				251AA0EA19402BC60034E20C /* MoviesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42E39DB8C8754A73A47FEC2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD83532676945B493C536AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Stale Nightshade-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		251AA0AE19402B730034E20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D1ABB4195BAA5900C19BC2 /* MovieDetailViewController.m in Sources */,
+				251AA0E719402BC60034E20C /* MoviesViewController.m in Sources */,
+				251AA0C619402B730034E20C /* AppDelegate.m in Sources */,
+				251AA0F719410A550034E20C /* Movie.m in Sources */,
+				251AA0F01940CCDC0034E20C /* MovieCell.m in Sources */,
+				251AA0C219402B730034E20C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251AA0C919402B730034E20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251AA0DB19402B730034E20C /* Stale_NightshadeTests.m in Sources */,
+				251AA0E819402BC60034E20C /* MoviesViewController.m in Sources */,
+				251AA0F819410A550034E20C /* Movie.m in Sources */,
+				251AA0F11940CCDC0034E20C /* MovieCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		251AA0D319402B730034E20C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 251AA0B119402B730034E20C /* Stale Nightshade */;
+			targetProxy = 251AA0D219402B730034E20C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		251AA0BE19402B730034E20C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251AA0BF19402B730034E20C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		251AA0D719402B730034E20C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251AA0D819402B730034E20C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		251AA0DC19402B730034E20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		251AA0DD19402B730034E20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		251AA0DF19402B730034E20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196ADFBF71774FF982D94DE3 /* Pods-Stale Nightshade.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stale Nightshade/Stale Nightshade-Prefix.pch";
+				INFOPLIST_FILE = "Stale Nightshade/Stale Nightshade-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		251AA0E019402B730034E20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196ADFBF71774FF982D94DE3 /* Pods-Stale Nightshade.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stale Nightshade/Stale Nightshade-Prefix.pch";
+				INFOPLIST_FILE = "Stale Nightshade/Stale Nightshade-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		251AA0E219402B730034E20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stale Nightshade.app/Stale Nightshade";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stale Nightshade/Stale Nightshade-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Stale NightshadeTests/Stale NightshadeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		251AA0E319402B730034E20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stale Nightshade.app/Stale Nightshade";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stale Nightshade/Stale Nightshade-Prefix.pch";
+				INFOPLIST_FILE = "Stale NightshadeTests/Stale NightshadeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		251AA0AD19402B730034E20C /* Build configuration list for PBXProject "Stale Nightshade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251AA0DC19402B730034E20C /* Debug */,
+				251AA0DD19402B730034E20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251AA0DE19402B730034E20C /* Build configuration list for PBXNativeTarget "Stale Nightshade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251AA0DF19402B730034E20C /* Debug */,
+				251AA0E019402B730034E20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251AA0E119402B730034E20C /* Build configuration list for PBXNativeTarget "Stale NightshadeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251AA0E219402B730034E20C /* Debug */,
+				251AA0E319402B730034E20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 251AA0AA19402B730034E20C /* Project object */;
+}
