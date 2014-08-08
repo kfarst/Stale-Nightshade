@@ -9,8 +9,11 @@
 #import "MovieDetailViewController.h"
 
 @interface MovieDetailViewController ()
+@property (strong, nonatomic) IBOutlet UIScrollView *synposisView;
 
 @end
+
+
 
 @implementation MovieDetailViewController
 
@@ -18,7 +21,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
@@ -27,6 +30,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSURL *detailedPosterUrl = [NSURL URLWithString:self.movie.detailedPosterUrl];
+    
+    if (detailedPosterUrl) {
+        NSData *posterData = [NSData dataWithContentsOfURL:detailedPosterUrl];
+        UIGraphicsBeginImageContext(self.view.frame.size);
+        [[UIImage imageWithData:posterData] drawInRect:self.view.bounds];
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    }
+    
+    UITextView *synopsis = [[UITextView alloc] init];
+    [synopsis setText:[NSString stringWithString:self.movie.synopsis]];
+    self.synposisView = [[UIScrollView alloc] init];
+    [self.synposisView addSubview:synopsis];
+    [self.synposisView bringSubviewToFront:synopsis];
 }
 
 - (void)didReceiveMemoryWarning

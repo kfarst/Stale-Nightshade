@@ -18,9 +18,6 @@ typedef enum {
     ViewMode mode;
 }
 
-@property (nonatomic, strong) NSString *listType;
-@property (strong, nonatomic) UITabBarController *movieTypeMenu;
-
 -(id) initWithMode:(ViewMode)aMode;
 
 @end

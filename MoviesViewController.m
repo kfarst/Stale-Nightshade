@@ -12,6 +12,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "Movie.h"
 #import "SVProgressHUD.h"
+#import "MovieDetailViewController.h"
 
 static NSString * const ApiKey = @"tax9gwc3xnks8xpkdhamyfke";
 
@@ -19,16 +20,29 @@ static NSString * const ApiKey = @"tax9gwc3xnks8xpkdhamyfke";
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *movies;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (strong, nonatomic) NSString *movieTypeUrlString;
 
 @end
 
 @implementation MoviesViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id)initWithMode:(ViewMode)viewMode {
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.title = @"Movies";
+
+        switch (viewMode) {
+            case movieView:
+                self.title = @"Theatrical";
+                
+                self.movieTypeUrlString = [NSString stringWithFormat:@"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=%@", ApiKey];
+                break;
+            case dvdView:
+                self.title = @"DVD";
+                
+                self.movieTypeUrlString = [NSString stringWithFormat:@"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=%@", ApiKey];
+                break;
+        }
+
     }
     return self;
 }
@@ -37,6 +51,7 @@ static NSString * const ApiKey = @"tax9gwc3xnks8xpkdhamyfke";
 {
     [super viewDidLoad];
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     self.tableView.rowHeight = 100;
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
@@ -75,20 +90,14 @@ static NSString * const ApiKey = @"tax9gwc3xnks8xpkdhamyfke";
     return movieCell;
 }
 
--(void)fetchMovies {
-    NSUInteger selectedIndex = self.movieTypeMenu.selectedIndex;
-    NSString *movieTypeUrlString;
-    
-    switch (selectedIndex) {
-        case 0:
-            movieTypeUrlString = [NSString stringWithFormat:@"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=%@", ApiKey];
-            break;
-        case 1:
-            movieTypeUrlString = [NSString stringWithFormat:@"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=%@", ApiKey];
-            break;
-    }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    MovieDetailViewController *detailVC = [[MovieDetailViewController alloc] init];
+    detailVC.movie = self.movies[indexPath.row];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 
-    NSURL *url = [NSURL URLWithString:movieTypeUrlString];
+-(void)fetchMovies {
+    NSURL *url = [NSURL URLWithString:self.movieTypeUrlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];

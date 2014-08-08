@@ -13,6 +13,8 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *thumbnailPosterUrl;
 @property (nonatomic, strong) NSString *originalPosterUrl;
+@property (nonatomic, strong) NSString *profilePosterUrl;
+@property (nonatomic, strong) NSString *detailedPosterUrl;
 @property (nonatomic, strong) NSString *rating;
 @property (nonatomic, strong) NSString *synopsis;
 

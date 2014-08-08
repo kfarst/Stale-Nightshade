@@ -15,30 +15,25 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+    
     // Theatrical releases
-    MoviesViewController *theatricalMoviesVC = [[MoviesViewController alloc] init];
-    UINavigationController *theatricalMoviesNavVC = [[UINavigationController alloc] initWithRootViewController:theatricalMoviesVC];
+    MoviesViewController *theatricalMoviesVC = [[MoviesViewController alloc] initWithMode:movieView];
     
     // DVD releases
-    MoviesViewController *dvdMoviesVC = [[MoviesViewController alloc] init];
-    UINavigationController *dvdMoviesNavVC = [[UINavigationController alloc] initWithRootViewController:dvdMoviesVC];
-    
-    // Create the tab bar controller
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    
-    theatricalMoviesVC.movieTypeMenu = tabBarController;
-    dvdMoviesVC.movieTypeMenu = tabBarController;
+    MoviesViewController *dvdMoviesVC = [[MoviesViewController alloc] initWithMode:dvdView];
     
     // Configure the titles and images of the tab bar items
-    theatricalMoviesNavVC.tabBarItem.title = @"Theatrical";
-    theatricalMoviesNavVC.tabBarItem.image = [UIImage imageNamed:@"House"];
+    theatricalMoviesVC.tabBarItem.title = @"Theatrical";
+    theatricalMoviesVC.tabBarItem.image = [UIImage imageNamed:@"House"];
     
-    dvdMoviesNavVC.tabBarItem.title = @"DVD";
-    dvdMoviesNavVC.tabBarItem.image = [UIImage imageNamed:@"Martini"];
+    dvdMoviesVC.tabBarItem.title = @"DVD";
+    dvdMoviesVC.tabBarItem.image = [UIImage imageNamed:@"Martini"];
     
-    tabBarController.viewControllers = @[theatricalMoviesNavVC, dvdMoviesNavVC];
+    tabBarController.viewControllers = @[theatricalMoviesVC, dvdMoviesVC];
     
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = navVC;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
